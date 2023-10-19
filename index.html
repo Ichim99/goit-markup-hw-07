@@ -11,9 +11,55 @@
     <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body >
+  <div class="js-menu-container">
+    <button class="menu-toggle js-close-menu">
+      <svg>
+        <use href="./images/icons.svg#icon-close" />
+      </svg>
+    </button>
+    
+    <nav class="menu-drawer-navigation">
+      <nav >
+        <ul class="nav-bar-modal">
+            <li><a href="./index.html" class="main-nav-modal" id="current">Studio</a></li>
+            <li><a href="./portofoliu.html" class="main-nav-modal">Portfolio</a></li>
+            <li><a href="#" class="main-nav-modal">Contacts</a></li>
+        </ul>
+    </nav>
+       <ul class="links-bar-modal"> 
+        <li class="smartphone-social-modal">
+            <a href="tel:+1-212-772-4150" class="social-link-phone-modal">+1 212-772-4150</a></li>
+        <li class="email-social-modal">
+            <a  href="mailto:info@devstudio.com" class="social-link-email-modal" >info@devstudio.com</a></li>   
+    </ul> 
+<div>
+  <ul class="social-manu-container">
+    <li><a href="#" class="social-manu">Instagram</a></li>
+    <li><div class="manu-bar"></div></li>
+    <li><a href="#" class="social-manu">Twitter</a></li>
+    <li><div class="manu-bar"></div></li>
+    <li><a href="#" class="social-manu">Facebook</a></li>  
+    <li><div class="manu-bar"></div></li>
+    <li><a href="#" class="social-manu">Linkedin</a></li> 
+  </ul>
+</div>
+      
+
+      
+    </nav>
+  </div>
+
           <!--Header section-->
     <header class="container-header">
         <a href="./index.html" class="logo" >Web<span class="logo2">Studio</span></a>
+
+
+        <div class="menu-js js-open-menu">
+          <svg>
+            <use href="./images/icons.svg#icon-menu-icon"></use>
+          </svg>
+        </div>
+       
         <nav >
             <ul class="nav-bar">
                 <li><a href="./index.html" class="main-nav" id="current">Studio</a></li>
@@ -21,7 +67,7 @@
                 <li><a href="#" class="main-nav">Contacts</a></li>
             </ul>
         </nav>
-        <ul class="links-bar">
+           <ul class="links-bar">
             <li class="email-social">
                 <svg class="icon-post">
                     <use xlink:href="./images/icons.svg#icon-post" height="12px" width="16px"></use>
@@ -32,13 +78,17 @@
                     <use xlink:href="./images/icons.svg#icon-smartphone"></use>
                   </svg>
                 <a href="tel:+1-212-772-4150" class="social-link">+1 212-772-4150</a></li>
-        </ul>
+        </ul> 
+ 
+        
+        
+
 
     </header>
           <!--Main section-->
     <main>
         <section class="title-section">
-            <h1 class="title">EFFECTIVE SOLUTIONS FOR <br>YOUR BUSINESS</h1>
+            <h1 class="title">EFFECTIVE SOLUTIONS <br>FOR YOUR BUSINESS</h1>
             <button data-modal-open class="button" >Request our service</button>
             
   
@@ -82,7 +132,7 @@
         </section>
 
         <section class="container-we-do">
-            <h2 class="section-title">What we do</h2>
+            <h2 class="section-title-we-do">What we do</h2>
             <div class="photos-we-do">
                 <div class="container-photo">
                     <img  src="./images/box-1.jpg" alt="work" width="370" height="294"/>
@@ -106,7 +156,41 @@
             <h2 class="section-title">Our Team</h2>
             <ul class="team">
                 <li>
-                    <img src="./images/Christopher-Walker.jpg" alt="worker" width="270"/>
+                    <picture>
+                        <!-- Desktop -->
+                        <source
+                          media="(min-width: 1158px)"
+                          srcset="
+                            ./images/Christopher-Walker-d.jpg    1x,
+                            ./images/Christopher-Walker-d-2x.jpg 2x
+                          "
+                        />
+              
+                        <!-- Tablet -->
+                        <source
+                          media="(min-width: 768px)"
+                          srcset="
+                            ./images/Christopher-Walker-t.jpg    1x,
+                            ./images/Christopher-Walker-t-2x.jpg 2x
+                          "
+                        />
+              
+                        <!-- Mobile -->
+                        <source
+                          srcset="
+                            ./images/Christopher-Walker-s.jpg    1x,
+                            ./images/Christopher-Walker-s-2x.jpg 2x
+                          "
+                        />
+              
+                        <img
+                          src="./images/Christopher-Walker-d.jpg"
+                          alt="worker"
+                          class="img-test" 
+                        />
+                      </picture>
+              
+                    
                     <h4 class="team-name">Christopher Walker</h4>
                     <p class="team-job">Product Designer</p>
                     <div class="container-social-network">
@@ -135,7 +219,39 @@
                     </div>
                 </li>
                 <li>
-                    <img src="./images/Kylie-Evans.jpg" alt="worker" width="270"/>
+                    <picture>
+                        <!-- Desktop -->
+                        <source
+                          media="(min-width: 1158px)"
+                          srcset="
+                            ./images/Kylie-Evans-d.jpg    1x,
+                            ./images/Kylie-Evans-d-2x.jpg  2x
+                          "
+                        />
+              
+                        <!-- Tablet -->
+                        <source
+                          media="(min-width: 768px)"
+                          srcset="
+                            ./images/Kylie-Evans-t.jpg     1x,
+                            ./images/Kylie-Evans-t-2x.jpg  2x
+                          "
+                        />
+              
+                        <!-- Mobile -->
+                        <source
+                          srcset="
+                            ./images/Kylie-Evans-s.jpg    1x,
+                            ./images/Kylie-Evans-s-2x.jpg 2x
+                          "
+                        />
+              
+                        <img
+                          src="./images/Kylie-Evans-d.jpg "
+                          alt="worker"
+                          class="img-test" 
+                        />
+                      </picture>
                     <h4 class="team-name">Kylie Evans</h4>
                     <p class="team-job">Frontend Developer</p>
                     <div class="container-social-network">
@@ -164,7 +280,39 @@
                 </div>
                 </li>
                 <li>
-                    <img src="./images/Ryan-Harris.jpg" alt="worker" width="270"/>
+                    <picture>
+                        <!-- Desktop -->
+                        <source
+                          media="(min-width: 1158px)"
+                          srcset="
+                            ./images/Ryan-Harris-d.jpg    1x,
+                            ./images/Ryan-Harris-d-2x.jpg  2x
+                          "
+                        />
+              
+                        <!-- Tablet -->
+                        <source
+                          media="(min-width: 768px)"
+                          srcset="
+                            ./images/Ryan-Harris-t.jpg     1x,
+                            ./images/Ryan-Harris-t-2x.jpg 2x
+                          "
+                        />
+              
+                        <!-- Mobile -->
+                        <source
+                          srcset="
+                            ./images/Ryan-Harris-s.jpg    1x,
+                            ./images/Ryan-Harris-s-2x.jpg 2x
+                          "
+                        />
+              
+                        <img
+                          src="./images/Ryan-Harris-d.jpg "
+                          alt="worker"
+                          class="img-test" 
+                        />
+                      </picture>
                     <h4 class="team-name">Ryan Harris</h4>
                     <p class="team-job">Marketing</p>
                     <div class="container-social-network">
@@ -193,7 +341,39 @@
                 </div>
                 </li>
                 <li>
-                    <img src="./images/Tyler-Moore.jpg" alt="worker" width="270"/>
+                    <picture>
+                        <!-- Desktop -->
+                        <source
+                          media="(min-width: 1158px)"
+                          srcset="
+                            ./images/Tyler-Moore-d.jpg    1x,
+                            ./images/Tyler-Moore-d-2x.jpg  2x
+                          "
+                        />
+              
+                        <!-- Tablet -->
+                        <source
+                          media="(min-width: 768px)"
+                          srcset="
+                            ./images/Tyler-Moore-t.jpg     1x,
+                            ./images/Tyler-Moore-t-2x.jpg  2x
+                          "
+                        />
+              
+                        <!-- Mobile -->
+                        <source
+                          srcset="
+                            ./images/Tyler-Moore-s.jpg    1x,
+                            ./images/Tyler-Moore-s-2x.jpg 2x
+                          "
+                        />
+              
+                        <img
+                          src="./images/Tyler-Moore-d.jpg "
+                          alt="worker"
+                          class="img-test" 
+                        />
+                      </picture>
                     <h4 class="team-name">Tyler Moore</h4>
                     <p class="team-job">UI Designer</p>
                      <div class="container-social-network">
@@ -266,8 +446,8 @@
           <!--Footer section-->
     <footer class="footer-zone">
     <div class="footer-zone-2">
-        <div >
-            <a href="./index.html" class="footer-logo" >Web<span class="logo2-footer">Studio</span></a>
+        <div class="footer-zone-2-logo">
+          <div><a href="./index.html" class="footer-logo" >Web<span class="logo2-footer">Studio</span></a>
         <address>
             <ul class="footer-address">
                 <li class="location">695 Park Ave, NY 10065, USA</li>
@@ -276,7 +456,7 @@
             </ul>
         </address></div>
 
-        <div >
+        <div class="footer-social" >
             <div class="container-title-social-footer"><span>FIND US ON</span></div>
             <div class="container-social-footer">
             <div>
@@ -301,7 +481,8 @@
             </div>
             </div>
          
-        </div>
+        </div></div>
+            
     <div class="container-newsletter">
         <div class="container-title-social-footer2"><span>SUBSCRIBE TO THE NEWSLETTER</span></div>
         <div class="newsltter-2line">
@@ -403,8 +584,14 @@
 
 
     
-      
+      <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
