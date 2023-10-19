@@ -173,13 +173,15 @@ ul {
 
 .title {
     color: #ffffff;
-    font-size: 44px;
+    font-size: 26px;
     font-weight: 900;
     letter-spacing: 6%;
-    line-height: 60px;
+    line-height: 42px;
     height: 120px;
     width: 100%;
-    
+    color: #FFF;
+font-style: normal;
+
 }
 .button {
     font-size: 16px;
@@ -805,7 +807,7 @@ text-transform: uppercase;
     gap: 20px;
 }
 .email-newsletter{
-    width: 380px;
+    width: 340px;
     height: 50px;
     flex-shrink: 0;
     padding: 0px;
@@ -1317,6 +1319,18 @@ margin-right: 10px;
         margin-left: 330px;}
     .title-section{
         height: 600px;
+    }
+    .title{
+        color: #FFF;
+
+text-align: center;
+font-family: Roboto;
+font-size: 44px;
+font-style: normal;
+font-weight: 900;
+line-height: 60px; /* 136.364% */
+letter-spacing: 2.64px;
+text-transform: uppercase;
     }
     .section-info{
         display: flex;
