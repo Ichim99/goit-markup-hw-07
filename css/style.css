@@ -805,7 +805,7 @@ text-transform: uppercase;
     gap: 20px;
 }
 .email-newsletter{
-    width: 450px;
+    width: 400px;
     height: 50px;
     flex-shrink: 0;
     padding: 0px;
