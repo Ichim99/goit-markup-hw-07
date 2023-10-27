@@ -274,7 +274,7 @@ fill: var(--link-color);
     align-content: center;
     margin-top: 60px;
     margin-bottom: 60px;
-    max-width: ;: 450px;
+    max-width: 450px;
     gap: 30px;
 }
 
@@ -546,7 +546,7 @@ fill: var(--link-color);
   }
   
   .overlay p {
-    width: 322px;
+    width: 402px;
     color: #FFF;
     font-size: 18px;
     font-style: normal;
@@ -559,7 +559,6 @@ fill: var(--link-color);
 
   
 .container-portfolio{
-    height: 1548px;
     width: 100%;
     display: flex;
     flex-direction: column ;
@@ -568,10 +567,9 @@ fill: var(--link-color);
 }
 .container-projects {
     display: flex;
-    flex-basis: calc((100% - 40px) / 4);
+    flex-direction: column;
     justify-content: center;
-    height: 1548px;
-    width: 1600px;
+    width: 450px;
     
     
 }
@@ -581,10 +579,9 @@ fill: var(--link-color);
     box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16); 
   }
 .container-projects ul {
-    height: 1272px;
-    width: 1170px;
+   
     display: flex;
-    flex-direction:row;
+    flex-direction:column;
     flex-wrap: wrap;
     gap: 30px;
     margin-bottom: 94px;
@@ -595,7 +592,7 @@ fill: var(--link-color);
     
 .container-projects li {
     height: 404px;
-    width: 370px;
+    width: 450px;
     display: inline-flex;
     flex-direction: column;
     align-items: center;
@@ -605,7 +602,7 @@ fill: var(--link-color);
     cursor: pointer;
 }
 .container-projects div{
-    width: 370px;
+    width: 450px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -614,11 +611,14 @@ fill: var(--link-color);
 
 .container-button {
     display: flex;
-    justify-content:space-between;
-    height: 38px;
-    width: 516px;
-    margin-top: 94px;
-    margin-bottom: 50px;
+    justify-content:flex-start;
+    flex-wrap: wrap;
+    gap: 8px;
+    height: 91px;
+    width: 274px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    
    
 }
 .button-portfolio {
@@ -1294,6 +1294,62 @@ margin-right: 10px;
     justify-content: center;
     align-items: center;
 }
+.container-button{
+    width: 516px;
+    height: 38px;
+    margin-top: 140px;
+    margin-bottom: 30px;
+}
+.container-projects{
+    width: 738px;
+}
+.container-projects ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    
+}
+.container-projects li{
+    width: 354px;
+    height: 440px;
+}
+.box {
+    position: relative;
+    
+    overflow: hidden;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(33, 150, 243, 0.90);
+  
+    transform: translatey(100%);
+    transition: transform 250ms ease-in-out;
+  }
+  
+  .box:hover .overlay {
+    transform: translatey(0);
+  }
+  
+  .overlay p {
+    width: 306px;
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; 
+    letter-spacing: 0.54px;
+    margin-left: 24px;
+    margin-top: 63px;
+  }
+  .container-projects div{
+    width: 354px;
+  }
+
 
 }
 
@@ -1427,4 +1483,61 @@ text-transform: uppercase;
     .email-newsletter{
         width: 330px;
     }
+    .container-button{
+        width: 516px;
+        height: 38px;
+        margin-top: 94px;
+        margin-bottom: 50px;
+    }
+    .container-projects{
+        width: 1170px;
+    }
+    .container-projects ul{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+        
+    }
+    .container-projects li{
+        width: 354px;
+        height: 440px;
+    }
+    .box {
+        position: relative;
+        
+        overflow: hidden;
+      }
+    
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(33, 150, 243, 0.90);
+      
+        transform: translatey(100%);
+        transition: transform 250ms ease-in-out;
+      }
+      
+      .box:hover .overlay {
+        transform: translatey(0);
+      }
+      
+      .overlay p {
+        width: 322px;
+        color: #FFF;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px; 
+        letter-spacing: 0.54px;
+        margin-left: 24px;
+        margin-top: 63px;
+      }
+      .container-projects div{
+        width: 354px;
+      }
+    
+    
 }

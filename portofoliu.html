@@ -11,29 +11,80 @@
     <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
-    <header class="container-header">
-        <a href="./index.html" class="logo" >Web<span class="logo2">Studio</span></a>
-        <nav >
-            <ul class="nav-bar">
-                <li><a href="./index.html" class="main-nav" >Studio</a></li>
-                <li><a href="./portofoliu.html" class="main-nav" id="current">Portfolio</a></li>
-                <li><a href="#" class="main-nav">Contacts</a></li>
+    <div class="js-menu-container">
+        <button class="menu-toggle js-close-menu">
+          <svg>
+            <use href="./images/icons.svg#icon-close" />
+          </svg>
+        </button>
+        
+        <nav class="menu-drawer-navigation">
+          <nav >
+            <ul class="nav-bar-modal">
+                <li><a href="./index.html" class="main-nav-modal" >Studio</a></li>
+                <li><a href="./portofoliu.html" class="main-nav-modal" id="current">Portfolio</a></li>
+                <li><a href="#" class="main-nav-modal">Contacts</a></li>
             </ul>
         </nav>
-        <ul class="links-bar">
-            <li class="email-social">
-                <svg class="icon-post">
-                    <use xlink:href="./images/icons.svg#icon-post" height="12px" width="16px"></use>
-                  </svg>
-                <a  href="mailto:info@devstudio.com" class="social-link" >info@devstudio.com</a></li> 
-            <li class="smartphone-social">
-                <svg class="icon-smartphone">
-                    <use xlink:href="./images/icons.svg#icon-smartphone"></use>
-                  </svg>
-                <a href="tel:+1-212-772-4150" class="social-link">+1 212-772-4150</a></li>
-        </ul>
-
-    </header>
+           <ul class="links-bar-modal"> 
+            <li class="smartphone-social-modal">
+                <a href="tel:+1-212-772-4150" class="social-link-phone-modal">+1 212-772-4150</a></li>
+            <li class="email-social-modal">
+                <a  href="mailto:info@devstudio.com" class="social-link-email-modal" >info@devstudio.com</a></li>   
+        </ul> 
+    <div>
+      <ul class="social-manu-container">
+        <li><a href="#" class="social-manu">Instagram</a></li>
+        <li><div class="manu-bar"></div></li>
+        <li><a href="#" class="social-manu">Twitter</a></li>
+        <li><div class="manu-bar"></div></li>
+        <li><a href="#" class="social-manu">Facebook</a></li>  
+        <li><div class="manu-bar"></div></li>
+        <li><a href="#" class="social-manu">Linkedin</a></li> 
+      </ul>
+    </div>
+          
+    
+          
+        </nav>
+      </div>
+    
+              <!--Header section-->
+        <header class="container-header">
+            <a href="./index.html" class="logo" >Web<span class="logo2">Studio</span></a>
+    
+    
+            <div class="menu-js js-open-menu">
+              <svg>
+                <use href="./images/icons.svg#icon-menu-icon"></use>
+              </svg>
+            </div>
+           
+            <nav >
+                <ul class="nav-bar">
+                    <li><a href="./index.html" class="main-nav" >Studio</a></li>
+                    <li><a href="./portofoliu.html" class="main-nav" id="current">Portfolio</a></li>
+                    <li><a href="#" class="main-nav">Contacts</a></li>
+                </ul>
+            </nav>
+               <ul class="links-bar">
+                <li class="email-social">
+                    <svg class="icon-post">
+                        <use xlink:href="./images/icons.svg#icon-post" height="12px" width="16px"></use>
+                      </svg>
+                    <a  href="mailto:info@devstudio.com" class="social-link" >info@devstudio.com</a></li> 
+                <li class="smartphone-social">
+                    <svg class="icon-smartphone">
+                        <use xlink:href="./images/icons.svg#icon-smartphone"></use>
+                      </svg>
+                    <a href="tel:+1-212-772-4150" class="social-link">+1 212-772-4150</a></li>
+            </ul> 
+     
+            
+            
+    
+    
+        </header>
 
 
     <main class="container-portfolio">
@@ -51,7 +102,39 @@
             <ul>
                 <li>
                     <div class="box">
-                     <img src="./images/technoduck.jpg" alt="technoduck" width="370"/>
+                        <picture>
+                            <!-- Desktop -->
+                            <source
+                              media="(min-width: 1158px)"
+                              srcset="
+                                ./images/Technoduck-d.jpg    1x,
+                                ./images/Technoduck-d-2x.jpg 2x
+                              "
+                            />
+                  
+                            <!-- Tablet -->
+                            <source
+                              media="(min-width: 768px)"
+                              srcset="
+                                ./images/Technoduck-t.jpg    1x,
+                                ./images/Technoduck-t-2x.jpg 2x
+                              "
+                            />
+                  
+                            <!-- Mobile -->
+                            <source
+                              srcset="
+                                ./images/Technoduck-s.jpg    1x,
+                                ./images/Technoduck-s-2x.jpg 2x
+                              "
+                            />
+                  
+                            <img
+                              src="./images/Technoduck-d.jpg"
+                              alt="worker"
+                              class="img-test" 
+                            />
+                          </picture>
                      <div class="overlay">
                      <p>Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers.</p></div>
         
@@ -65,7 +148,39 @@
                 
                 <li>
                     <div class="box">
-                        <img src="./images/poster-basketball.jpg" alt="Poster New Orlean vs Golden Star" width="370"/> 
+                        <picture>
+                            <!-- Desktop -->
+                            <source
+                              media="(min-width: 1158px)"
+                              srcset="
+                                ./images/Basket-d.jpg    1x,
+                                ./images/Basket-d-2x.jpg 2x
+                              "
+                            />
+                  
+                            <!-- Tablet -->
+                            <source
+                              media="(min-width: 768px)"
+                              srcset="
+                                ./images/Basket-t.jpg    1x,
+                                ./images/Basket-t-2x.jpg 2x
+                              "
+                            />
+                  
+                            <!-- Mobile -->
+                            <source
+                              srcset="
+                                ./images/Basket-s.jpg    1x,
+                                ./images/Basket-s-2x.jpg 2x
+                              "
+                            />
+                  
+                            <img
+                              src="./images/Basket-d.jpg"
+                              alt="worker"
+                              class="img-test" 
+                            />
+                          </picture>
                         <div class="overlay"><p></p></div>  
                        </div>
                       
@@ -76,7 +191,39 @@
                 </li>
                 <li>
                     <div class="box">
-                     <img src="./images/seafood-restaurant.jpg" alt="seafood restaurant " width="370"/> 
+                        <picture>
+                            <!-- Desktop -->
+                            <source
+                              media="(min-width: 1158px)"
+                              srcset="
+                                ./images/Seafood-d.jpg    1x,
+                                ./images/Seafood-d-2x.jpg 2x
+                              "
+                            />
+                  
+                            <!-- Tablet -->
+                            <source
+                              media="(min-width: 768px)"
+                              srcset="
+                                ./images/Seafood-t.jpg    1x,
+                                ./images/Seafood-t-2x.jpg 2x
+                              "
+                            />
+                  
+                            <!-- Mobile -->
+                            <source
+                              srcset="
+                                ./images/Seafood-s.jpg    1x,
+                                ./images/Seafood-s-2x.jpg 2x
+                              "
+                            />
+                  
+                            <img
+                              src="./images/Seafood-d.jpg"
+                              alt="worker"
+                              class="img-test" 
+                            />
+                          </picture>
                      <div class="overlay"><p></p></div>  
                     </div>
                    
@@ -88,7 +235,39 @@
                 </li>
                 <li>
                     <div class="box">
-                        <img src="./images/project-prime.jpg" alt="project prime " width="370"/> 
+                        <picture>
+                            <!-- Desktop -->
+                            <source
+                              media="(min-width: 1158px)"
+                              srcset="
+                                ./images/Prime-d.jpg    1x,
+                                ./images/Prime-d-2x.jpg 2x
+                              "
+                            />
+                  
+                            <!-- Tablet -->
+                            <source
+                              media="(min-width: 768px)"
+                              srcset="
+                                ./images/Prime-t.jpg    1x,
+                                ./images/Prime-t-2x.jpg 2x
+                              "
+                            />
+                  
+                            <!-- Mobile -->
+                            <source
+                              srcset="
+                                ./images/Prime-s.jpg    1x,
+                                ./images/Prime-s-2x.jpg 2x
+                              "
+                            />
+                  
+                            <img
+                              src="./images/Prime-d.jpg"
+                              alt="worker"
+                              class="img-test" 
+                            />
+                          </picture>
                         <div class="overlay"><p></p></div>  
                        </div>
                     
@@ -100,7 +279,39 @@
                 </li>
                 <li>
                     <div class="box">
-                        <img src="./images/project-boxes.jpg" alt="project boxes " width="370"/> 
+                        <picture>
+                            <!-- Desktop -->
+                            <source
+                              media="(min-width: 1158px)"
+                              srcset="
+                                ./images/Boxes-d.jpg    1x,
+                                ./images/Boxes-d-2x.jpg 2x
+                              "
+                            />
+                  
+                            <!-- Tablet -->
+                            <source
+                              media="(min-width: 768px)"
+                              srcset="
+                                ./images/Boxes-t.jpg    1x,
+                                ./images/Boxes-t-2x.jpg 2x
+                              "
+                            />
+                  
+                            <!-- Mobile -->
+                            <source
+                              srcset="
+                                ./images/Boxes-s.jpg    1x,
+                                ./images/Boxes-s-2x.jpg 2x
+                              "
+                            />
+                  
+                            <img
+                              src="./images/Boxes-d.jpg"
+                              alt="worker"
+                              class="img-test" 
+                            />
+                          </picture>
                         <div class="overlay"><p></p></div>  
                        </div>
                    
@@ -112,7 +323,39 @@
                 </li>
                 <li>
                     <div class="box">
-                        <img src="./images/inspiration-has-no-borders.jpg" alt="inspiration has no borders " width="370"/> 
+                        <picture>
+                            <!-- Desktop -->
+                            <source
+                              media="(min-width: 1158px)"
+                              srcset="
+                                ./images/Inspiration-d.jpg    1x,
+                                ./images/Inspiration-d-2x.jpg 2x
+                              "
+                            />
+                  
+                            <!-- Tablet -->
+                            <source
+                              media="(min-width: 768px)"
+                              srcset="
+                                ./images/Inspiration-t.jpg    1x,
+                                ./images/Inspiration-t-2x.jpg 2x
+                              "
+                            />
+                  
+                            <!-- Mobile -->
+                            <source
+                              srcset="
+                                ./images/Inspiration-s.jpg    1x,
+                                ./images/Inspiration-s-2x.jpg 2x
+                              "
+                            />
+                  
+                            <img
+                              src="./images/Inspiration-d.jpg"
+                              alt="worker"
+                              class="img-test" 
+                            />
+                          </picture>
                         <div class="overlay"><p></p></div>  
                        </div>
                    
@@ -124,7 +367,39 @@
                 </li>
                 <li>
                     <div class="box">
-                        <img src="./images/limited-edition.jpg" alt="limited edition " width="370"/> 
+                        <picture>
+                            <!-- Desktop -->
+                            <source
+                              media="(min-width: 1158px)"
+                              srcset="
+                                ./images/Book-d.jpg    1x,
+                                ./images/Book-d-2x.jpg 2x
+                              "
+                            />
+                  
+                            <!-- Tablet -->
+                            <source
+                              media="(min-width: 768px)"
+                              srcset="
+                                ./images/Book-t.jpg    1x,
+                                ./images/Book-t-2x.jpg 2x
+                              "
+                            />
+                  
+                            <!-- Mobile -->
+                            <source
+                              srcset="
+                                ./images/Book-s.jpg    1x,
+                                ./images/Book-s-2x.jpg 2x
+                              "
+                            />
+                  
+                            <img
+                              src="./images/Book-d.jpg"
+                              alt="worker"
+                              class="img-test" 
+                            /> 
+                          </picture>
                         <div class="overlay"><p></p></div>  
                        </div>
                     
@@ -136,7 +411,39 @@
                 </li>
                 <li>
                     <div class="box">
-                        <img src="./images/project-lab.jpg" alt="project lab " width="370"/> 
+                        <picture>
+                            <!-- Desktop -->
+                            <source
+                              media="(min-width: 1158px)"
+                              srcset="
+                                ./images/LAB-d.jpg    1x,
+                                ./images/LAB-d-2x.jpg 2x
+                              "
+                            />
+                  
+                            <!-- Tablet -->
+                            <source
+                              media="(min-width: 768px)"
+                              srcset="
+                                ./images/LAB-t.jpg    1x,
+                                ./images/LAB-t-2x.jpg 2x
+                              "
+                            />
+                  
+                            <!-- Mobile -->
+                            <source
+                              srcset="
+                                ./images/LAB-s.jpg    1x,
+                                ./images/LAB-s-2x.jpg 2x
+                              "
+                            />
+                  
+                            <img
+                              src="./images/LAB-d.jpg"
+                              alt="worker"
+                              class="img-test" 
+                            />
+                          </picture> 
                         <div class="overlay"><p></p></div>  
                        </div>
                     
@@ -148,7 +455,39 @@
                 </li>
                 <li>
                     <div class="box">
-                        <img src="./images/growing-business.jpg" alt="growing business " width="370"/> 
+                        <picture>
+                            <!-- Desktop -->
+                            <source
+                              media="(min-width: 1158px)"
+                              srcset="
+                                ./images/Business-d.jpg    1x,
+                                ./images/Business-d-2x.jpg 2x
+                              "
+                            />
+                  
+                            <!-- Tablet -->
+                            <source
+                              media="(min-width: 768px)"
+                              srcset="
+                                ./images/Business-t.jpg    1x,
+                                ./images/Business-t-2x.jpg 2x
+                              "
+                            />
+                  
+                            <!-- Mobile -->
+                            <source
+                              srcset="
+                                ./images/Business-s.jpg    1x,
+                                ./images/Business-s-2x.jpg 2x
+                              "
+                            />
+                  
+                            <img
+                              src="./images/Business-d.jpg"
+                              alt="worker"
+                              class="img-test" 
+                            />
+                          </picture> 
                         <div class="overlay"><p></p></div>  
                        </div>
                     
@@ -162,10 +501,11 @@
         </section>
     </main>
     
+    <!--Footer section-->
     <footer class="footer-zone">
         <div class="footer-zone-2">
-            <div >
-                <a href="./index.html" class="footer-logo" >Web<span class="logo2-footer">Studio</span></a>
+            <div class="footer-zone-2-logo">
+              <div><a href="./index.html" class="footer-logo" >Web<span class="logo2-footer">Studio</span></a>
             <address>
                 <ul class="footer-address">
                     <li class="location">695 Park Ave, NY 10065, USA</li>
@@ -174,7 +514,7 @@
                 </ul>
             </address></div>
     
-            <div >
+            <div class="footer-social" >
                 <div class="container-title-social-footer"><span>FIND US ON</span></div>
                 <div class="container-social-footer">
                 <div>
@@ -199,7 +539,8 @@
                 </div>
                 </div>
              
-            </div>
+            </div></div>
+                
         <div class="container-newsletter">
             <div class="container-title-social-footer2"><span>SUBSCRIBE TO THE NEWSLETTER</span></div>
             <div class="newsltter-2line">
@@ -225,6 +566,13 @@
     
         </footer>
 
-    
+        <script
+        defer
+        src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"
+      ></script>
+      <script src="./js/modal.js"></script>
+      <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
